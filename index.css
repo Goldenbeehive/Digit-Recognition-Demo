@@ -1,0 +1,147 @@
+body{
+    margin: 0%;
+    background-image: url( wave-haikei.svg);
+    background-repeat: no-repeat;
+  background-size: cover;
+}
+#navbar{
+ 
+    background-color: rgba(0, 0, 0, 0.5);
+    
+     
+    width: 100%;
+}
+#link{
+    width: 25px;
+    height: 25px;
+    display: inline-block;
+}
+#birdimg{
+    margin-left: 6px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-right: 5px;
+    width: 25px;
+    height: 25px;
+}
+#circle {
+    margin-left: 7px;
+    margin-top: 5px;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    overflow: hidden;
+    background-color: rgba(204, 204, 204, 0.2);; /* your desired background color */
+  }
+#title{
+    display: flex;
+    
+    justify-content: center;
+    font-family: 'Libre Franklin', sans-serif;
+    font-size: medium;
+}
+#titletext{
+    background-color: rgb(255, 235, 205,0.2);
+    border-radius: 15px;
+    padding: 10px 10px 10px 10px;
+    text-align: center;
+}
+
+#row{
+    display: flex;
+     
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+     
+    
+}
+#myButton{
+    height: 20px;
+}
+#out{
+    margin-right: 20px;
+}
+#drawingarea{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 350px;
+    height: 400px;
+    background-color: rgb(255, 235, 205,0.2);
+    border-radius: 15px;
+}
+@media screen and (max-width: 767px) {
+    #row{
+        gap: 20px;
+    }
+}
+#predbutton{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 30px;
+    background-color: rgb(255, 235, 205,0.2);
+    border-radius: 15px;
+
+}
+#output{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 350px;
+    height: 400px;
+    background-color: rgb(255, 235, 205,0.2);
+    border-radius: 15px;
+}
+#pred{
+    display: flex;
+    
+    justify-content: center;
+    font-family: 'Libre Franklin', sans-serif;
+    font-size: large;
+
+}
+.progress-bar {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #e6e6e6;
+    animation: rotation 2s linear infinite;
+  }
+  
+  .progress {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: #4caf50;
+    clip: rect(0, 50px, 100px, 0);
+    transform-origin: center;
+  }
+ 
+  @keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+  progress {
+       /* remove the default styling */
+    width: 200px;
+    height: 20px; /* adjust the height as needed */
+    border: none;
+    border-radius: 10px; /* add some border radius for a rounded appearance */
+   accent-color: linear-gradient(to right, #ff8a00, #e52e71);
+  }
+   

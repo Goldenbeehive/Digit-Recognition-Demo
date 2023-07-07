@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@200&display=swap" rel="stylesheet">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <div id='navbar'>
+        <a id="link" href="https://github.com/Goldenbeehive">
+            <div id="circle"><img id="birdimg" src="birdpfp.png" /></div>
+        </a>
+
+    </div>
+    <br>
+    <div id='title'>
+        <h1 id='titletext' > Digit Recognition Machine learning Demo</h1>
+    </div>
+    <div id=row>
+        <div id="drawingarea">
+            <p id='title' style="font-size: 22px;">Draw a digit here!</p>
+            <canvas id="canvas" width="256" height="256" style="border:1px solid #000000;"></canvas>
+            <button id="clear">Clear</button>
+        </div>
+        <div id="predbutton">
+            <button id="myButton">Predict Digit</button>
+        </div>
+        <div id='output'>
+            <p id="pred" style="font-size: 22px;">Predictions will be here!</p>
+
+        </div>
+    </div>
+    <script src="./index.js"></script>
+</body>
+
+</html>
