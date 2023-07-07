@@ -1,22 +1,25 @@
-body{
+body {
     margin: 0%;
-    background-image: url( wave-haikei.svg);
+    background-image: url(wave-haikei.svg);
     background-repeat: no-repeat;
-  background-size: cover;
+    background-size: cover;
 }
-#navbar{
- 
+
+#navbar {
+
     background-color: rgba(0, 0, 0, 0.5);
-    
-     
+
+
     width: 100%;
 }
-#link{
+
+#link {
     width: 25px;
     height: 25px;
     display: inline-block;
 }
-#birdimg{
+
+#birdimg {
     margin-left: 6px;
     margin-top: 5px;
     margin-bottom: 5px;
@@ -24,6 +27,7 @@ body{
     width: 25px;
     height: 25px;
 }
+
 #circle {
     margin-left: 7px;
     margin-top: 5px;
@@ -31,81 +35,85 @@ body{
     height: 35px;
     border-radius: 50%;
     overflow: hidden;
-    background-color: rgba(204, 204, 204, 0.2);; /* your desired background color */
-  }
-#title{
+    background-color: rgba(204, 204, 204, 0.2);
+}
+
+#title {
     display: flex;
-    
     justify-content: center;
     font-family: 'Libre Franklin', sans-serif;
     font-size: medium;
 }
-#titletext{
-    background-color: rgb(255, 235, 205,0.2);
+
+#titletext {
+    background-color: rgb(255, 235, 205, 0.2);
     border-radius: 15px;
     padding: 10px 10px 10px 10px;
     text-align: center;
 }
 
-#row{
+#row {
     display: flex;
-     
     justify-content: space-evenly;
     align-items: center;
     flex-wrap: wrap;
-     
-    
 }
-#myButton{
+
+#myButton {
     height: 20px;
 }
-#out{
+
+#out {
     margin-right: 20px;
 }
-#drawingarea{
+
+#drawingarea {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
     width: 350px;
     height: 400px;
-    background-color: rgb(255, 235, 205,0.2);
+    background-color: rgb(255, 235, 205, 0.2);
     border-radius: 15px;
 }
+
 @media screen and (max-width: 767px) {
-    #row{
+    #row {
         gap: 20px;
     }
 }
-#predbutton{
+
+#predbutton {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 100px;
     height: 30px;
-    background-color: rgb(255, 235, 205,0.2);
+    background-color: rgb(255, 235, 205, 0.2);
     border-radius: 15px;
-
 }
-#output{
+
+#output {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 350px;
     height: 400px;
-    background-color: rgb(255, 235, 205,0.2);
+    background-color: rgb(255, 235, 205, 0.2);
     border-radius: 15px;
 }
-#pred{
+
+#pred {
     display: flex;
-    
     justify-content: center;
     font-family: 'Libre Franklin', sans-serif;
     font-size: large;
 
 }
+
 .progress-bar {
     position: relative;
     width: 100px;
@@ -113,9 +121,9 @@ body{
     border-radius: 50%;
     background-color: #e6e6e6;
     animation: rotation 2s linear infinite;
-  }
-  
-  .progress {
+}
+
+.progress {
     position: absolute;
     top: 0;
     left: 0;
@@ -125,23 +133,21 @@ body{
     background-color: #4caf50;
     clip: rect(0, 50px, 100px, 0);
     transform-origin: center;
-  }
- 
-  @keyframes rotation {
-    from {
-      transform: rotate(0deg);
-    }
-    to {
-      transform: rotate(360deg);
-    }
-  }
+}
 
-  progress {
-       /* remove the default styling */
+@keyframes rotation {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+progress {
     width: 200px;
-    height: 20px; /* adjust the height as needed */
+    height: 20px;
     border: none;
-    border-radius: 10px; /* add some border radius for a rounded appearance */
-   accent-color: linear-gradient(to right, #ff8a00, #e52e71);
-  }
-   
+    border-radius: 10px;
+}

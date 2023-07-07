@@ -53,7 +53,7 @@ function stopDrawing() {
 
 const myButton = document.getElementById('myButton');
 const clear = document.getElementById('clear');
-clear.addEventListener('click',()=>{
+clear.addEventListener('click', () => {
     ctx.fillStyle = "black";
     ctx.fillRect(0, 0, canvas.width, canvas.height);
 })
@@ -63,7 +63,7 @@ myButton.addEventListener('click', () => {
     outputarea.innerHTML = `<div class="progress-bar">
     <div class="progress"></div>
   </div>`
-    
+
     predictDigit()
 });
 
@@ -100,7 +100,7 @@ async function predictDigit() {
         });
 
 
-        
+
     } catch (error) {
         console.log(error);
     }
@@ -108,17 +108,17 @@ async function predictDigit() {
 
 function setProgress(percent) {
     const progress = document.querySelector(".progress");
-    if(progress == null){
+    if (progress == null) {
         return;
     }
     const progressText = document.querySelector(".progress-text");
 
     const deg = percent * 3.6;
     progress.style.transform = `rotate(${deg}deg)`;
-    
-  }
-  
-  setInterval(() => {
+
+}
+
+setInterval(() => {
     const percent = Math.floor(Math.random() * 101); // simulate progress
     setProgress(percent);
-  }, 2000); // update progress every 2 seconds
+}, 2000); // update progress every 2 seconds
